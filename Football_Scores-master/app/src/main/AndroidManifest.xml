@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="barqsoft.footballscores" >
+
+    <!--REMOVED MAX SDK VERSION: Causing Missing Permission exception on M preview -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".db.ScoresProvider"
+            android:authorities="barqsoft.footballscores"
+            android:exported="true"/>
+
+        <activity
+            android:name=".AboutActivity"
+            android:label="About"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="barqsoft.footballscores.MainActivity" />
+        </activity>
+        <service android:name=".service.myFetchService" />
+
+
+        <receiver android:name=".widget.LastMatchWidgetProvider"
+            android:label="@string/simple_widget_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/simple_widget_info" />
+        </receiver>
+
+        <receiver android:name=".widget.CollectionWidgetProvider"
+            android:label="@string/collection_widget_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/collection_widget_info" />
+        </receiver>
+
+        <service android:name=".widget.CollectionRemoteViewsService"
+        android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+    </application>
+
+</manifest>

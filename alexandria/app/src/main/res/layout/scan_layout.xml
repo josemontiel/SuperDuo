@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scan_layout"
+    android:background="#96000000"
+    android:visibility="gone">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_above="@+id/add_linearlayout"
+        android:layout_marginLeft="@dimen/abc_action_bar_content_inset_material"
+        android:layout_marginRight="@dimen/abc_action_bar_content_inset_material"
+        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material">
+
+        <com.journeyapps.barcodescanner.CompoundBarcodeView
+            android:id="@+id/zxing_barcode_scanner"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/add_linearlayout">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.70"
+            app:cardCornerRadius="4dp"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/abc_action_bar_content_inset_material">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/add_code_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/add_book_hint"
+                    android:inputType="number"
+                    android:background="@android:color/white"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/abc_action_bar_content_inset_material"
+                    android:theme="@style/AppTheme"/>
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_code_progressview"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/abc_edit_text_inset_horizontal_material" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v4.widget.Space
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/abc_action_bar_content_inset_material"
+            android:layout_marginRight="@dimen/abc_action_bar_content_inset_material" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+

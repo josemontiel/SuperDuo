@@ -1,0 +1,93 @@
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?colorPrimary"
+        android:elevation="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:layout_width = "fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchText"
+                android:inputType="text"
+                android:saveEnabled="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:hint="@string/filter_prompt"
+                android:layout_marginBottom="8dp" />
+
+            <requestFocus/>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:layout_below="@+id/search_toolbar">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_list_of_books"
+                android:name="it.jaschke.alexandria.ListOfBooksFragment" />
+
+
+        </FrameLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/detail_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:visibility="gone"/>
+
+
+        <include layout="@layout/scan_layout" />
+
+
+
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/abc_action_bar_content_inset_material"
+        android:src="@drawable/ic_content_add"
+        android:id="@+id/main_add_book_button"
+        android:onClick="addBookOnClick"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+
+
+

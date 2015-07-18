@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:id="@+id/lastmatch_widget_root"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:padding="@dimen/widget_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/accent"
+            android:text="@string/widget_last_match"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/widget_last_match"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/widget_teams_playing"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/teams_playing_description"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/widget_score"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/primary_light"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/score_description"/>
+
+    </LinearLayout>
+
+</FrameLayout>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Football Scores</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="test_text">Test</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="champions_league">UEFA Champions League</string>
+    <string name="bundesliga">Bundesliga</string>
+    <string name="premierleague">Premier League</string>
+    <string name="primeradivison">Primera Division</string>
+    <string name="seriaa">Serie A</string>
+    <string name="matchday_text">Match day</string>
+    <string name="group_stage_text">Group stages</string>
+    <string name="first_knockout_round">First knockout round</string>
+    <string name="quarter_final">Quarter Final</string>
+    <string name="semi_final">Semi Final</string>
+    <string name="final_text">Final</string>
+    <string name="share_text">Share</string>
+    <string name="about">About</string>
+    <string name="title_activity_about">About</string>
+    <string name="about_text">
+        This Application get Football Matches Score for the Premier League,Seria A,Bundesliga,Primera Division
+        and the Uefa Champions League.
+        All Matches data are acquired from football-data.org free API.
+        All team Logos are acquired from http://hdlogo.wordpress.com/ upon requesting permission form the owner.
+        The original version of this app was created by Yahia Khalid Ibn El Walid Ahmed, and a modified version is given to students in the Udacity Android Nanodegree program.
+        To report any bugs,or suggestions do not hesitate to send a mail to y.k.ibnelwalid@gmail.com.
+
+        During the off season, fake data will be added to the app.
+    </string>
+    <string name="dummy_data" translatable="false">{\"timeFrameStart\":\"2015-06-18\",\"timeFrameEnd\":\"2015-06-19\",\"count\":1,\"fixtures\":[{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/140514243\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"Arsenal London FC\",\"awayTeamName\":\"Manchester United FC\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/140514850\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"Arsenal London FC\",\"awayTeamName\":\"Manchester United FC\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/1405140505\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"Arsenal London FC\",\"awayTeamName\":\"Manchester United FC\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/1405149054\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"Arsenal London FC\",\"awayTeamName\":\"Manchester United FC\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/14051400\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"Arsenal London FC\",\"awayTeamName\":\"Manchester United FC\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/14051411\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"Arsenal London FC\",\"awayTeamName\":\"Manchester United FC\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/14051443\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"Arsenal London FC\",\"awayTeamName\":\"Manchester United FC\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/1405\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"Arsenal London FC\",\"awayTeamName\":\"Manchester United FC\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/14051422\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"Arsenal London FC\",\"awayTeamName\":\"Manchester United FC\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/140515\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"Arsenal London FC\",\"awayTeamName\":\"Manchester United FC\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}}]}</string>
+    <string name="home_name_description">Home team\'s name</string>
+    <string name="score_description">Score</string>
+    <string name="home_crest_description">Home team\'s crest</string>
+    <string name="away_crest_description">Away team\'s crest</string>
+    <string name="away_name_description">Away team\'s name</string>
+    <string name="about_description">App\'s description</string>
+    <string name="league_description">League</string>
+    <string name="matchday_description">Matchday</string>
+    <string name="share_description">Share</string>
+    <string name="data_description">Date and Time</string>
+    <string name="widget_teams_playing" formatted="false" translatable="false">%s VS %s</string>
+    <string name="widget_last_match">Last Match:</string>
+    <string name="widget_todays_matches">Today\'s Matches</string>
+    <string name="collection_widget_label">Football Scores - Today\'s Matches</string>
+    <string name="simple_widget_label">Football Scores - Last Match</string>
+    <string name="score_format" formatted="false" translatable="false">%d - %d</string>
+    <string name="teams_playing_description">Teams Playing</string>
+    <string name="log_will_save" translatable="false">will save</string>
+    <string name="log_fragment" translatable="false">"fragment: "</string>
+    <string name="log_selected_id" translatable="false">"selected id: "</string>
+    <string name="log_will_retrieve" translatable="false">will retrieve</string>
+    <string name="log_error_here" translatable="false">error here!</string>
+    <string name="share_type" translatable="false">text/plain</string>
+</resources>

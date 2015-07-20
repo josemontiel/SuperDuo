@@ -20,8 +20,11 @@
             android:id="@+id/widget_teams_playing"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/teams_playing_description"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -29,9 +32,12 @@
             android:id="@+id/widget_score"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/primary_light"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/score_description"/>
 
     </LinearLayout>
 

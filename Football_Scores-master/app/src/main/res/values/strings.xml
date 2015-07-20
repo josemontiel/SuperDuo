@@ -55,4 +55,8 @@
     <string name="log_will_retrieve" translatable="false">will retrieve</string>
     <string name="log_error_here" translatable="false">error here!</string>
     <string name="share_type" translatable="false">text/plain</string>
+    <string name="fixture_number_description">Fixture number: %s</string>
+    <string name="league_desc">League: %s</string>
+    <string name="home_team_desc">Home Team: %s</string>
+    <string name="away_team_desc">Away Team: %s</string>
 </resources>

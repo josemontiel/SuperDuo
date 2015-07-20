@@ -52,7 +52,11 @@ public class ScoresAdapter extends CursorAdapter
     {
         final ViewHolder mHolder = (ViewHolder) view.getTag();
         mHolder.home_name.setText(cursor.getString(COL_HOME));
+        mHolder.home_name.setContentDescription(String.format(context.getString(R.string.home_team_desc), cursor.getString(COL_HOME)));
+
         mHolder.away_name.setText(cursor.getString(COL_AWAY));
+        mHolder.home_name.setContentDescription(String.format(context.getString(R.string.away_team_desc), cursor.getString(COL_HOME)));
+
         mHolder.date.setText(cursor.getString(COL_MATCHTIME));
         mHolder.score.setText(Utilies.getScores(cursor.getInt(COL_HOME_GOALS), cursor.getInt(COL_AWAY_GOALS)));
         mHolder.match_id = cursor.getDouble(COL_ID);
@@ -73,11 +77,21 @@ public class ScoresAdapter extends CursorAdapter
 
             container.addView(v, 0, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT
                     , ViewGroup.LayoutParams.MATCH_PARENT));
+
             TextView match_day = (TextView) v.findViewById(R.id.matchday_textview);
             match_day.setText(Utilies.getMatchDay(cursor.getInt(COL_MATCHDAY),
                     cursor.getInt(COL_LEAGUE)));
+
+            match_day.setContentDescription(
+                    String.format(context.getString(R.string.fixture_number_description),
+                            Utilies.getMatchDay(cursor.getInt(COL_MATCHDAY),
+                    cursor.getInt(COL_LEAGUE))));
+
             TextView league = (TextView) v.findViewById(R.id.league_textview);
             league.setText(Utilies.getLeague(cursor.getInt(COL_LEAGUE)));
+
+            league.setContentDescription(String.format(context.getString(R.string.league_desc), cursor.getInt(COL_LEAGUE)));
+
             Button share_button = (Button) v.findViewById(R.id.share_button);
             share_button.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -88,6 +102,7 @@ public class ScoresAdapter extends CursorAdapter
                     +mHolder.score.getText()+" "+mHolder.away_name.getText() + " "));
                 }
             });
+
         }
         else
         {

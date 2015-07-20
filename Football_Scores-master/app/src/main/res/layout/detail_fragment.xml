@@ -44,6 +44,8 @@
                 android:drawableStart="@drawable/abc_ic_menu_share_mtrl_alpha"
                 android:paddingLeft="60dp"
                 android:paddingRight="60dp"
+                android:paddingStart="60dp"
+                android:paddingEnd="60dp"
                 android:contentDescription="@string/share_description"
                 android:textColor="@android:color/white"
                 android:theme="@style/AppTheme" />

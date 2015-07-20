@@ -19,6 +19,8 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/accent"
             android:text="@string/widget_last_match"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
@@ -33,6 +35,8 @@
             android:ellipsize="middle"
             android:textColor="@android:color/white"
             android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:contentDescription="@string/teams_playing_description"/>
@@ -45,6 +49,8 @@
             android:textColor="@color/primary_light"
             android:textStyle="bold"
             android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:contentDescription="@string/score_description"/>
